@@ -1,0 +1,12 @@
+.skill-card {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin: 10px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}

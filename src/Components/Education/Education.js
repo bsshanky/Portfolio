@@ -2,7 +2,8 @@ import React from "react";
 import "./Education.css";
 import { FaGraduationCap } from "react-icons/fa";
 
-
+import bmsce from "../../Image/BMSCE.png";
+import northeastern from "../../Image/Northeastern.png";
 
 import {
     VerticalTimeline,
@@ -13,71 +14,87 @@ import {
 const Education = () => {
   const data = [
     {
-      name: "Oxford University",
-      degree: "M.sc in Software Engineering",
-      year: "2020-2022",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      name: "Northeastern University",
+      degree: "Master's in Data Science",
+      year: "Sep 2022 - May 2024",
+      location: "📍: Boston, MA",
+      gpa: "GPA: 3.73/4.00",
+      coursework: ["Introduction to Data Management (DS 5110)", "Algorithms (CS 5800)", "Database Management Systems (CS 5200)", "Supervised Machine Learning (DS 5220)", "Web Development (CS 5610)"],
     },
     {
-      name: "MIT University",
-      degree: "B.sc in Software Engineering",
-      year: "2016-2020",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
-    },
-    {
-      name: "Cambridge College",
-      degree: "College Graduation",
-      year: "2014-2016",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
-    },
-    {
-      name: "Queen school",
-      degree: "School Graduation",
-      year: "2007-2013",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      name: "BMS College of Engineering",
+      degree: "Bachelor's in Electronics Engineering",
+      year: "Aug 2014 - May 2018",
+      location: "📍: Bangalore, India",
+      gpa: "GPA: 8.26/10.00",
+      coursework: ["C Programming", "Operating Systems", "Data Structures & Algorithms", "Microcontrollers", "Computer Networks"],
     },
   ];
 
 
-  const colors = [
-    "#001CCE",
-    "#4B088A",
-    "#FE2EF7",
-    "#FF1042",
-  ];
+  const images = [
+    northeastern,
+    bmsce
+  ]
 
   return (
     <div className="container education-section" id="education">
 
       <div className="section-title">
-        <h5>Education</h5>
-        <span className="line"></span>
+        <p className="main-topic">Education 🎓:</p>
       </div>
 
 
       <div className="timeline-section">
 
-        <VerticalTimeline lineColor="#FF1042">
+      <VerticalTimeline lineColor="#4b81f4">
 
           {data.map((item, index) => (
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: colors[index], color: "#fff" }}
-              contentArrowStyle={{ borderRight: "7px solid  #FFBB24" }}
+              contentStyle={{ background: "#252526", color: "#fff" }}
+              contentArrowStyle={{ borderRight: "7px solid #252526" }}
               date={item.year}
               dateClassName="date-class"
-              iconStyle={{ background: colors[index], color: "#fff" }}
+              iconStyle={{ background: "#252526", color: "#fff" }}
               icon={<FaGraduationCap />}
             >
-              <h3 className="vertical-timeline-element-title">
-                {item.name}
-              </h3>
-              <h5 className="vertical-timeline-element-subtitle" style={{color:"yellow"}}>
-                {item.degree}
-              </h5>
+            
+              <div id="college">
+              <img
+                    src={images[index]}
+                    alt={item.name}
+                    style={{ width: "30px", height: "30px", objectFit: "cover" }}
+                  />
+                <h3 className="vertical-timeline-element-title">
+                    {item.name}
+                </h3>     
+              </div>
 
 
-              <p>{item.des}</p>
+              <div id="college-details">
+                <h5 className="vertical-timeline-element-subtitle" style={{fontStyle: 'italic', color: 'grayText'}}>
+                  {item.degree}
+                </h5>
+                <h5 className="vertical-timeline-element-subtitle" style={{color:"white"}}>
+                  {item.location}
+                </h5>
+                <h5 className="vertical-timeline-element-subtitle" style={{color:"white"}}>
+                  {item.gpa}
+                </h5>
+
+                <h5 className="vertical-timeline-element-subtitle" style={{color:"yellow"}}>
+                  Relevant Coursework:
+                </h5>
+              </div>
+
+              <ul className="role-list">
+                {item.coursework.map((roleItem, roleIndex) => (
+                  <li key={roleIndex}>
+                    <strong>{roleItem}</strong>
+                  </li>
+                ))}
+              </ul>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>

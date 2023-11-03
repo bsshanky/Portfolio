@@ -1,15 +1,17 @@
 import React, { useState, createContext } from "react";
-import Sidebar from "./Components/Sidebar/Sidebar";
+import Navbar from "./Components/Navbar/Navbar";
+import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import TechStack from "./Components/TechStack/TechStack";
 import Project from "./Components/Projects/Project";
 import WorkExperience from "./Components/WorkExperience/WorkExperience";
 import Education from "./Components/Education/Education";
 import Testimonial from "./Components/Testimonial/Testimonial";
-import Contact from "./Components/Contact/Contact";
+import OutsideWork from "./Components/OutsideWork/OutsideWork";
+import Footer from "./Components/Footer/Footer";
+
 import ScrollToTop from "react-scroll-to-top";
 import "./App.css";
-import NavbarMobileView from "./Components/Sidebar/NavbarMobileView";
 
 export const ThemeContext = createContext(null);
 
@@ -23,16 +25,16 @@ const App = () => {
   return (
     <ThemeContext.Provider value={{ theme, changeTheme }}>
       <div id={theme}>
-        <NavbarMobileView changeTheme={changeTheme} theme={theme}/>
-
-        <Sidebar changeTheme={changeTheme} theme={theme}/>
+        <Navbar />
+        <Home changeTheme={changeTheme} theme={theme}/>
         <About />
         <WorkExperience />
         <TechStack />
         <Education />
         <Project />
         <Testimonial />
-        <Contact />
+        <OutsideWork />
+        <Footer />
       </div>
 
       <ScrollToTop

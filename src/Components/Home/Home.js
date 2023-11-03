@@ -1,16 +1,51 @@
 import React from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
-import MyCv from "./cv.pdf";
-import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+import MyCv from "./Shashank-CV-2023.pdf";
 import Fade from "react-reveal/Fade";
 
 import { Link } from "react-scroll";
 
-const Home = ({ theme, changeTheme }) => {
+const Home = () => {
   return (
     <div className="container-fluid home" id="home">
-      <div className="theme-change" onClick={changeTheme}>
+      <div className="container home-content">
+        <Fade right>
+          <h1 id="name">Hi, I'm Shashank 🙋‍♂️</h1>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px'}}>
+            <h3 style={{'color': 'white'}}>I'm a 👉 </h3>
+            <h3>
+            <Typewriter
+              options={{
+                strings: [
+                  "Data Scientist",
+                  "Native iOS Developer",
+                  "Web Developer"
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 5,
+              }}
+            />
+            </h3>
+            
+          </div>
+        </Fade>
+
+        <Fade bottom>
+            <div className="get-resume-button">
+              <a href={MyCv} download="">Download Resume 📄</a>
+            </div>
+        </Fade>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
+
+
+   {/* <div className="theme-change" onClick={changeTheme}>
         {theme === "light" ? (
           <p>
             <BsFillMoonStarsFill size={40} />
@@ -20,30 +55,9 @@ const Home = ({ theme, changeTheme }) => {
             <BsFillSunFill size={40} />
           </p>
         )}
-      </div>
+      </div> */}
 
-      <div className="container home-content">
-        <Fade right>
-          <h1>Hi I'm Yazdani Chowdhury</h1>
-          <h3>
-            <Typewriter
-              options={{
-                strings: [
-                  "Full Stack Software Developer",
-                  "MERN Stack Developer",
-                  "Web Developer",
-                  "UI/UX Designer",
-                ],
-                autoStart: true,
-                loop: true,
-                delay: 5,
-              }}
-            />
-          </h3>
-        </Fade>
-
-        <Fade bottom>
-          <div className="button-for-action">
+       {/* <div className="button-for-action">
             <Link
               to="contactsection"
               spy={true}
@@ -51,18 +65,8 @@ const Home = ({ theme, changeTheme }) => {
               duration={100}
               offset={-100}
             >
-              <div className="hire-me-button">Hire Me</div>
             </Link>
             <div className="get-resume-button">
-              <a href={MyCv} download="Yazdani_cv.pdf">
-                Get Resume
-              </a>
+              <a href={MyCv} download="">Download Resume 📄</a>
             </div>
-          </div>
-        </Fade>
-      </div>
-    </div>
-  );
-};
-
-export default Home;
+          </div> */}

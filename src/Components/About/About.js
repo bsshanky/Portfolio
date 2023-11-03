@@ -1,48 +1,60 @@
 import React from "react";
 import "./About.css";
-import ProfilePic from "../../Image/a.jpg";
+import ProfilePic from "../../Image/Profile-pic.jpg";
+import GithubLogo from '../../Image/github.png';
+import YoutubeLogo from '../../Image/youtube.png';
+import LinkedInLogo from '../../Image/linkedin.png';
+import EmailLogo from '../../Image/gmail.png'
 import Fade from "react-reveal/Fade";
-import Flip from "react-reveal/Flip";
 
 const About = () => {
   return (
+     
     <div className="container about-section" id="about">
       <div className="row">
         <Fade bottom>
           <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <div className="about-image">
-              <img src={ProfilePic} alt="Profile Photo" />
+          <div className="dp-designation">
+              <div className="about-image">
+                <img src={ProfilePic} alt="User" />
+              </div>
+              <p className="sub-topic" >Master's in Data Science @ Northeastern (Sep'22 - May'24)</p>
+              <p className="sub-topic" >📍: Boston, MA 🇺🇸</p>
+              <div id="job-status">
+                  <div id="green-circle"></div>
+                  <p id="open-to-work">Open to full time opportunities</p>
+              </div>
             </div>
           </div>
+
         </Fade>
 
         <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-          <div className="about-details">
-            <Flip left>
-              <div className="about-title">
-                <h5>About Me</h5>
-                <span className="line"></span>
-              </div>
-            </Flip>
+        <div className="about-description">
+                    <p className="main-topic">About me 👨‍💼:</p>
+                    <p className="sub-topic" style={{textAlign: "left"}}>
+                        My aspiration is to achieve success as a Data Scientist by developing methodologies that facilitate comprehension of complex domains through mathematical modeling.
 
-            <Fade right>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem
-                Ipsum as their default model text, and a search for 'lorem
-                ipsum' will uncover many web sites still in their infancy.
-                Various versions have evolved over the years, sometimes by
-                accident, sometimes on purpose (injected humour and the like).
-              </p>
-            </Fade>
-          </div>
+My specific interest lies in applying Artificial Intelligence (AI) techniques to study global warming and contribute to wildlife conservation efforts. By harnessing the power of AI, I believe we can make a positive impact on the world.<br/>
+
+Overall, my combined skills in Data Science, AI, and Full Stack Development equip me with a diverse toolkit to tackle complex challenges and contribute to meaningful projects with the ultimate goal of improving our world. <br/>
+            
+                    </p>
+                    <p className="sub-topic" style={{textAlign: "left"}}>
+                        You can also find me on the below platforms 👇
+                    </p>
+                    <div id="social-media">
+                        <a href="mailto:bsshanky@gmail.com"><img className="social-icon" src={EmailLogo}/></a>
+                        {/* <a href="https://linkedin.com/in/shashank-b-s" target="_blank"><img className="social-icon" src={YoutubeLogo}/></a> */}
+                        <a href="https://linkedin.com/in/shashank-b-s" target="_blank"><img className="social-icon" src={LinkedInLogo}/></a>
+                        <a href="https://github.com/bsshanky?tab=repositories" target="_blank"><img className="social-icon" src={GithubLogo}/></a>
+                    </div>
+                    
+                </div>
         </div>
       </div>
-    </div>
+    </div> 
+
   );
 };
 

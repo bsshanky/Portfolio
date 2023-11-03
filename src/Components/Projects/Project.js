@@ -3,145 +3,95 @@ import ProjectList from "./ProjectList";
 import "./Project.css";
 
 const Project = () => {
+  
   const data = [
     {
-      name: "MERN Stack Job Portal",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      projectlink: "https://react-company-profile.netlify.app/",
+      name: "Predicting Breast Cancer Survivability",
+      subject: "Done as a part of the DS5110's curriculum at Northeastern University", 
+      des: ["Performed EDA and modelling on the world famous METABRIC breast cancer data set", "Models were built using a variety of estimators and the best accuracy achieved was 72% using Random Forests"],
+      // projectlink: "https://react-company-profile.netlify.app/",
       techused: [
         {
-          techname: "Node Js",
+          techname: "Data Cleaning",
         },
         {
-          techname: "Expres Js",
+          techname: "EDA",
         },
         {
-          techname: "React Js",
-        },
-        {
-          techname: "Next Js",
+          techname: "Modelling",
         },
       ],
     },
-
+  
     {
-      name: "MERN Stack Event Management Portal",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      projectlink: "https://react-company-profile.netlify.app/",
+      name: "CIFAR 10 Image Classification",
+      subject: "Done as a part of the DS5220's curriculum at Northeastern University",
+      des: ["Built a Neural network model with multiple convolutional layers (CNN), cross-entropy function and SGC optimiser", "Improved the performance by increasing number of layers and epochs. Accuracy ~ 65%"],
+      // projectlink: "https://react-company-profile.netlify.app/",
       techused: [
         {
-          techname: "Django",
+          techname: "Tensor Flow",
         },
         {
-          techname: "Expres Js",
-        },
-        {
-          techname: "Vue Js",
-        },
-        {
-          techname: "Nuxt Js",
+          techname: "Neural Networks",
         },
       ],
     },
-
+  
     {
-      name: "MERN Stack Social Media",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      projectlink: "https://react-company-profile.netlify.app/",
+      name: "Movie Time React App",
+      subject: "Done as a part of the CS5610's curriculum at Northeastern University",
+      des: ["Built a MERN Stack application which showcases retro Hollywood movies", "User have a saved custom favorites list", "Notable feature is Drag n Drop which allows user to rank and re-arrange their favorites list easily"],
+      projectlink: "https://github.com/bsshanky/MovieTime",
       techused: [
         {
           techname: "Node JS",
         },
         {
-          techname: "Expres Js",
+          techname: "Express Js",
         },
         {
-          techname: "Typescript",
-        },
-        {
-          techname: "Nuxt Js",
-        },
+          techname: "React Drag n Drop",
+        }
       ],
     },
     {
-      name: "MERN Stack Video Streaming",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      projectlink: "https://react-company-profile.netlify.app/",
+      name: "AnimeChat React App",
+      subject: "Done as a part of the CS5610's curriculum at Northeastern University",
+      des: ["Built a MERN Stack chat application which with individual channels dedicated to the user's favorite anime", "Enabled easy login through Google Authentication"],
+      projectlink: "https://github.com/bsshanky/AnimeChat-Frontend",
       techused: [
         {
           techname: "Node JS",
         },
         {
-          techname: "Expres Js",
+          techname: "Express JS",
         },
         {
-          techname: "Typescript",
+          techname: "React",
         },
         {
-          techname: "Angular Js",
+          techname: "Google Authentication",
         },
       ],
     },
-    {
-      name: "MERN Stack Online Learning Platform",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      projectlink: "https://react-company-profile.netlify.app/",
-      techused: [
-        {
-          techname: "Node JS",
-        },
-        {
-          techname: "Expres Js",
-        },
-        {
-          techname: "Typescript",
-        },
-        {
-          techname: "Angular Js",
-        },
-      ],
-    },
-
-    {
-      name: "MERN Stack E-commerc",
-      des: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",
-      projectlink: "https://react-company-profile.netlify.app/",
-      techused: [
-        {
-          techname: "Node JS",
-        },
-        {
-          techname: "Expres Js",
-        },
-        {
-          techname: "Material UI",
-        },
-        {
-          techname: "Redux",
-        },
-
-        {
-          techname: "React Js",
-        },
-      ],
-    },
-  ];
+  ];  
 
   return (
-    <div className="container" id="project">
+    <div className="container project-section" id="project">
       <div className="section-title">
-        <h5>Projects</h5>
-        <span className="line"></span>
+        <p className="main-topic">Projects ⚒️:</p>
+        <p className="prompt-message">Click each title to view or dismiss project description</p>
       </div>
 
-      <div className="row">
-        {data.map((item, index) => (
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12" key={index}>
+      <div className="project-list">
 
-            <ProjectList  {...item} />
-           
+        {data.map((item, index) => (
+          <div style={{width: "100%"}} key={index}>
+            <ProjectList item={item} />
           </div>
         ))}
+        
       </div>
     </div>
   );

@@ -1,60 +1,51 @@
 import React, { useState } from "react";
-import { FcExpand, FcCollapse } from "react-icons/fc";
-import "./Project.css";
+import "./ProjectList.css";
+import GithubLogo from '../../Image/github.png';
+import YoutubeLogo from '../../Image/youtube.png';
 
-import Zoom from "react-reveal/Zoom";
-
-const ProjectList = ({ name, des, projectlink, techused }) => {
+const ProjectList = ({item}) => {
   const [show, setShow] = useState(false);
 
   const handleShowandCollapse = () => {
     setShow(!show);
   };
 
-
-  const colors = [
-    "#1F618D",
-    "#FF8042",
-    "#001CCE",
-    "#4B088A",
-    "#FF6347",
-    "#FF1042",
-  ];
-
   return (
-    <Zoom>
-      <div
-        className={show ? "project-list-opned project-list" : "project-list"}
-        onClick={handleShowandCollapse}
-        onMouseEnter={() => setShow(true)}
-        //   onMouseLeave={()=>setShow(false)}
-      >
-        <div className="title-and-collapse-option">
-          <h5>{name}</h5>
-          <p>{show ? <FcCollapse size={20} /> : <FcExpand size={20} />}</p>
-        </div>
-        <div className="description">
-          {show ? <p>{des}</p> : <p>{des.substring(0, 150)}...</p>}
-        </div>
-
-        <div className="row">
-          {techused &&
-            techused.map((tech, index) => (
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12" key={index}>
-                <div className="tech-used-in-project" >
-                  <p style={{backgroundColor:colors[index]}}>{tech.techname}</p>
+    <>
+      <div className="collapsible" onClick={handleShowandCollapse}>
+          <p style={{margin: "0%"}}>
+            {item.name}
+          </p>
+      </div>
+      <div className={`colcontent ${show ? "active-project" : ""}`} >
+        <p>
+          <i style={{color: "#b76d35", opacity: "70%"}}>{item.subject}</i>
+          <br />
+          {item.des.map((roleItem, roleIndex) => (
+            <li key={roleIndex}>{roleItem}</li>
+          ))}
+        </p>
+        <p style={{fontWeight: "bold"}}>Skills used:</p>
+        <div className="row" style={{margin: "15px"}}>
+          {item.techused &&
+            item.techused.map((tech, index) => (
+              <div className="tech-used-in-project" key={index} >
+                  <p>{tech.techname}</p>
                 </div>
-              </div>
+              
             ))}
         </div>
 
-        <div className="live-demo-button">
-          <a target="_" href={projectlink}>
-            Live Demo
-          </a>
+        {item.projectlink ? (
+          <div className="colcontent-links">
+          {/* <a href="https://linkedin.com/in/shashank-b-s" target="_blank"><img className="social-icon-project" src={YoutubeLogo}/></a> */}
+          <a href={item.projectlink} target="_blank"><img className="social-icon-project" src={GithubLogo}/></a>
         </div>
+        ) 
+        :
+        null}        
       </div>
-    </Zoom>
+    </>
   );
 };
 
