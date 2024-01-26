@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.2fb1452f.css",
+    "main.js": "/Portfolio/static/js/main.8fa235e8.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/Portfolio/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/Profile-pic.jpg": "/Portfolio/static/media/Profile-pic.08e8bba8d323731f2049.jpg",
+    "static/media/mKongovi.png": "/Portfolio/static/media/mKongovi.b34cfe7dafdbb4c3693b.png",
+    "static/media/Northeastern.png": "/Portfolio/static/media/Northeastern.ec283550a97515845500.png",
+    "static/media/BMSCE.png": "/Portfolio/static/media/BMSCE.5e2b4ae847aab72527e5.png",
+    "static/media/hunterxhunter.jpeg": "/Portfolio/static/media/hunterxhunter.38af2d735c5027dc402f.jpeg",
+    "static/media/swiftBySundell.jpg": "/Portfolio/static/media/swiftBySundell.cac5f3736b081f5771b6.jpg",
+    "static/media/wizard101.jpg": "/Portfolio/static/media/wizard101.ddd565abc3b78ce05846.jpg",
+    "static/media/elonMusk.jpg": "/Portfolio/static/media/elonMusk.fad7fd30a8cee2644449.jpg",
+    "static/media/DS-Resume-Shashank-Jan2024.pdf": "/Portfolio/static/media/DS-Resume-Shashank-Jan2024.1756ada96742a6cb5348.pdf",
+    "static/media/github.png": "/Portfolio/static/media/github.05f6c17b8cd04c28456f.png",
+    "static/media/gmail.png": "/Portfolio/static/media/gmail.a2f2146f929409405da0.png",
+    "static/media/linkedin.png": "/Portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
+    "index.html": "/Portfolio/index.html",
+    "main.2fb1452f.css.map": "/Portfolio/static/css/main.2fb1452f.css.map",
+    "main.8fa235e8.js.map": "/Portfolio/static/js/main.8fa235e8.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/Portfolio/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fb1452f.css",
+    "static/js/main.8fa235e8.js"
+  ]
+}

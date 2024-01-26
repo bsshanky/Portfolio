@@ -1,0 +1,64 @@
+
+.workexperience-section{
+    margin-top: 70px;
+}
+
+.timeline-section{
+    margin-top: 20px;
+}
+
+.tech-skills p{
+    background-color: black;
+    border-radius: 90px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.tech-skills p:hover{
+    background-color: gold;
+    cursor: pointer;
+    color: black;
+}
+.date-class{
+    color: black;
+}
+
+#dark .date-class{
+    color: white;
+}
+
+.main-topic {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  #company {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 10px; 
+  }
+
+  .date-class {
+    color: black; /* Change the default color as needed */
+  }
+
+
+  /* @media (max-width:1000px) {
+    
+} */
+
+
+@media (max-width: 1400px) {
+
+    .main-topic{
+        text-align: left;
+    }
+
+    .date-class {
+        color: white; /* Change the default color as needed */
+    }
+}
