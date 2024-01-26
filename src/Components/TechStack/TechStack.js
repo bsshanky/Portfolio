@@ -82,12 +82,7 @@ const skillsData = [
       {
         name: "MongoDB",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-      },
-
-      {
-        name: "GraphQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
-      },
+      }
 
     ]
   },
