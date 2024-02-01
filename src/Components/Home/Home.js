@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
-import MyCv from "./DS-Resume-Shashank-Jan2024.pdf";
+import MyCv from "./ShashankBettada.pdf";
 import Fade from "react-reveal/Fade";
 
 import { Link } from "react-scroll";
