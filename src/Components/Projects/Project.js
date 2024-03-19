@@ -47,7 +47,7 @@ const Project = () => {
       name: "Movie Time React App",
       subject: "Done as a part of the CS 5610's curriculum at Northeastern University",
       des: ["Built a MERN Stack application which showcases retro Hollywood movies", "User have a saved custom favorites list", "Notable feature is Drag n Drop which allows user to rank and re-arrange their favorites list easily"],
-      projectlink: "https://github.com/bsshanky/MovieTime",
+      projectlink: "https://github.com/bsshanky/MovieTimeMERN",
       techused: [
         {
           techname: "Node JS",
@@ -139,6 +139,31 @@ const Project = () => {
         }
       ],
     },
+    {
+      name: "Web Warden - App Store",
+      subject: "Personal Project - Available on the iOS App Store",
+      des: ["Developed an iOS application that enables users to categorically store their web URLs.", 
+            "Data stored on one device automatically syncs to other devices sharing the same iCloud account.",
+            ],
+      projectlink: "https://apps.apple.com/us/app/web-warden/id6479176472",
+      techused: [
+        {
+          techname: "SwiftUI",
+        },
+        {
+          techname: "Core Data",
+        },
+        {
+          techname: "CloudKit",
+        },
+        {
+          techname: "Share Extension",
+        },
+        {
+          techname: "App Groups",
+        }
+      ],
+    },
   ];  
 
   return (
@@ -152,7 +177,7 @@ const Project = () => {
 
         {data.map((item, index) => (
           <div style={{width: "100%"}} key={index}>
-            <ProjectList item={item} />
+            <ProjectList item={item} isLastItem={index === data.length - 1}/>
           </div>
         ))}
         

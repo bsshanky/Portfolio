@@ -33,11 +33,11 @@ const About = () => {
         <div className="about-description">
                     <p className="main-topic">About me 👨‍💼:</p>
                     <p className="sub-topic" style={{textAlign: "left"}}>
-                        My aspiration is to achieve success as a Data Scientist by developing methodologies that facilitate comprehension of complex domains through mathematical modeling.
+                        I have close to 4 years of professional experience as a Software Engineer. I have worked at an MNC and a start-up. Hence, I am accustomed to diverse work environments.<br/><br/>
 
-My specific interest lies in applying Artificial Intelligence (AI) techniques to study global warming and contribute to wildlife conservation efforts. By harnessing the power of AI, I believe we can make a positive impact on the world.<br/>
+I have significant experience in Mobile App Development, Web Development and Data Science. I am passionate about all domains of modern Computer Science and constantly upskill myself by watching tutorials and doing projects.<br/><br/>
 
-Overall, my combined skills in Data Science, AI, and Full Stack Development equip me with a diverse toolkit to tackle complex challenges and contribute to meaningful projects with the ultimate goal of improving our world. <br/>
+If my skillsets match your requirements, I am happy to discuss potential job openings. Thank you for visiting my website 🙏.<br/>
             
                     </p>
                     <p className="sub-topic" style={{textAlign: "left"}}>
@@ -59,3 +59,14 @@ Overall, my combined skills in Data Science, AI, and Full Stack Development equi
 };
 
 export default About;
+
+
+
+{/* <p className="sub-topic" style={{textAlign: "left"}}>
+                        My aspiration is to achieve success as a Data Scientist by developing methodologies that facilitate comprehension of complex domains through mathematical modeling.
+
+My specific interest lies in applying Artificial Intelligence (AI) techniques to study global warming and contribute to wildlife conservation efforts. By harnessing the power of AI, I believe we can make a positive impact on the world.<br/>
+
+Overall, my combined skills in Data Science, AI, and Full Stack Development equip me with a diverse toolkit to tackle complex challenges and contribute to meaningful projects with the ultimate goal of improving our world. <br/>
+            
+                    </p> */}

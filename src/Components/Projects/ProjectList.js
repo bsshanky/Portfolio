@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./ProjectList.css";
 import GithubLogo from '../../Image/github.png';
 import YoutubeLogo from '../../Image/youtube.png';
+import { FaAppStoreIos } from "react-icons/fa";
 
-const ProjectList = ({item}) => {
+const ProjectList = ({item, isLastItem}) => {
   const [show, setShow] = useState(false);
 
   const handleShowandCollapse = () => {
@@ -39,7 +40,16 @@ const ProjectList = ({item}) => {
         {item.projectlink ? (
           <div className="colcontent-links">
           {/* <a href="https://linkedin.com/in/shashank-b-s" target="_blank"><img className="social-icon-project" src={YoutubeLogo}/></a> */}
-          <a href={item.projectlink} target="_blank"><img className="social-icon-project" src={GithubLogo}/></a>
+          {/* <a href={item.projectlink} target="_blank"><img className="social-icon-project" src={GithubLogo}/></a> */}
+
+          {/* Conditionally render the App Store icon or the GitHub logo */}
+          {isLastItem ? (
+              // Render the FaAppStoreIos icon for the last item
+              <a href={item.projectlink} target="_blank"><FaAppStoreIos className="social-icon-project"/></a>
+            ) : (
+              // Render the GitHub logo for other items
+              <a href={item.projectlink} target="_blank"><img className="social-icon-project" src={GithubLogo}/></a>
+            )}
         </div>
         ) 
         :

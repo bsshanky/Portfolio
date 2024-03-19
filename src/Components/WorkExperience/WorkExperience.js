@@ -25,7 +25,7 @@ const WorkExperience = () => {
       {
         client: "Client - Lenmed Hospitals, South Africa:",
         role: ["Developed a healthcare application which enabled triggering a ’Single click SOS’ alert to nearby paramedics in case of heart attack or stroke", 
-        "Managed the system design phase by decisively advocating for Backend as a Service (BaaS) over a native backend, achieving a 50% reduction in resources and costs, and ensuring scalability along with feature compatibility to meet user demands effectively",
+        "Orchestrated backend design for a key project utilizing Cloud Firestore, incorporating Email/Phone Sign-In, 2FA (Email or OTP), and GeoQueries. This strategic shift to cloud-native services slashed operational costs by 50%, enhancing scalability and feature compatibility while minimizing total ownership cost.",
         "Implemented various code optimizations to efficiently utilize Pay-As-You-Go API services, effectively reducing overhead costs by 66% and enhancing system performance",
       ]
       },
@@ -44,9 +44,8 @@ const WorkExperience = () => {
       position: "Associate Software Engineer",
       des: [
         {client: "Client - Celgene Corporation, USA:",
-          role: ["Revamped 30% of the codebase, strictly adhering to the Single Responsibility Principle, resulting in enhanced testability and maintainability of the software", 
-          "Authored XCTest suites for 1500+ lines of core application code, elevating code reliability and minimizing bugs",
-          "Optimized the development process by configuring a Jenkins CI/CD pipeline, automating testing and ipa file generation, which resulted in a 30% reduction in testing and deployment time"
+          role: ["Authored Unit Test suites for 1500+ lines of core functionality code, increasing test coverage by 30% and reducing post-release defects by 25%.", 
+          "Optimized the development process by configuring a Jenkins CI/CD pipeline, automating testing and executable file generation, which resulted in a 30% reduction in time to market the app.",
         ]
       },
       ],

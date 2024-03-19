@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
-import MyCv from "./ShashankBettada.pdf";
 import Fade from "react-reveal/Fade";
 
 import { Link } from "react-scroll";
@@ -34,7 +33,7 @@ const Home = () => {
 
         <Fade bottom>
             <div className="get-resume-button">
-              <a href={MyCv} download="">Download Resume 📄</a>
+              <a href="https://drive.google.com/file/d/1_gLWNVgKY1fxmiRSUAQL7JGDBkBl5kGs/view?usp=share_link" target="_blank" rel="noopener noreferrer">View Resume 📄</a>
             </div>
         </Fade>
       </div>

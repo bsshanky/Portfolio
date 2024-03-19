@@ -2,7 +2,7 @@ import React from "react";
 import "./OutsideWork.css";
 
 import wizard101 from "../../Image/wizard101.jpg";
-import elonMusk from "../../Image/elonMusk.jpg";
+import SwiftCookbook from "../../Image/SwiftCookbook.jpeg";
 import swiftBySundell from "../../Image/swiftBySundell.jpg";
 import hunterxhunter from "../../Image/hunterxhunter.jpeg";
 
@@ -23,9 +23,9 @@ const data = [
     },
     {
         action: "Reading",
-        name: "Elon Musk",
-        source: "Walter Isaacson",
-        link: "https://www.amazon.com/Elon-Musk-Walter-Isaacson/dp/1982181281"
+        name: "SwiftUI Cookbook",
+        source: "Juan C. Catalan",
+        link: "https://www.amazon.com/SwiftUI-Cookbook-building-beautiful-interactive/dp/1805121731/ref=asc_df_1805121731/?tag=hyprod-20&linkCode=df0&hvadid=686087345901&hvpos=&hvnetw=g&hvrand=17688467522344191470&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001982&hvtargid=pla-2271403810482&psc=1&mcid=2bf708aff79e3d9e8f8b534425d86582&gad_source=1&gclid=EAIaIQobChMIva_T0_GAhQMVv05HAR0S-wf5EAQYASABEgLIuvD_BwE"
     },
     {
         action: "Playing",
@@ -38,7 +38,7 @@ const data = [
 const images = [
     hunterxhunter,
     swiftBySundell,
-    elonMusk,
+    SwiftCookbook,
     wizard101
   ]
 

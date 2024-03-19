@@ -26,7 +26,7 @@ const Education = () => {
       degree: "Bachelor's in Electronics Engineering",
       year: "Aug 2014 - May 2018",
       location: "📍: Bangalore, India",
-      gpa: "GPA: 8.26/10.00",
+      gpa: "GPA: 3.50/4.00",
       coursework: ["C Programming", "Operating Systems", "Data Structures & Algorithms", "Microcontrollers", "Computer Networks"],
     },
   ];
