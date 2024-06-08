@@ -1,0 +1,13 @@
+.outsideWork-section {
+    margin-top: 70px;
+}
+
+.activites-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Use space-around to evenly space the cards */
+    align-items: flex-start; /* Align items to the top of the container */
+    gap: 20px; /* Add some gap between the cards */
+    padding: 20px; /* Add padding to the container if needed */
+}

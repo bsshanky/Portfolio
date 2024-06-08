@@ -1,0 +1,30 @@
+.education-section{
+    margin-top: 70px;
+}
+
+#college {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 10px; 
+}
+
+#college-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    gap: 10px; 
+}
+
+.date-class {
+    color: black; /* Change the default color as needed */
+  }
+
+@media (max-width: 1400px) {
+    .date-class {
+        color: white; /* Change the default color as needed */
+    }
+}
