@@ -33,7 +33,7 @@ const About = () => {
         <div className="about-description">
                     <p className="main-topic">About me 👨‍💼:</p>
                     <p className="sub-topic" style={{textAlign: "left"}}>
-                        I have close to 4 years of professional experience as a Software Engineer. I have worked at an MNC and a start-up. Hence, I am accustomed to diverse work environments.<br/><br/>
+                        I have 4+ years of professional experience as a Software Engineer. I have worked at an MNC and a start-up. Hence, I am accustomed to diverse work environments.<br/><br/>
 
 I have significant experience in Mobile App Development, Web Development and Data Science. I am passionate about all domains of modern Computer Science and constantly upskill myself by watching tutorials and doing projects.<br/><br/>
 
