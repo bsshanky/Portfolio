@@ -33,7 +33,7 @@ const Home = () => {
 
         <Fade bottom>
             <div className="get-resume-button">
-              <a href="https://drive.google.com/file/d/1_gLWNVgKY1fxmiRSUAQL7JGDBkBl5kGs/view?usp=share_link" target="_blank" rel="noopener noreferrer">View Resume 📄</a>
+              <a href="https://drive.google.com/file/d/1FmdRnpwsrfGVBLZGtifxhmLtKzPF8q7m/view?usp=share_link" target="_blank" rel="noopener noreferrer">View Resume 📄</a>
             </div>
         </Fade>
       </div>

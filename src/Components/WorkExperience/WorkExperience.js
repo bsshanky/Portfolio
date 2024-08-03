@@ -13,8 +13,8 @@ import { MdWork } from "react-icons/md";
 const WorkExperience = () => {
   const data = [
     {
-      companyname: "Navigem Data",
-      image: "accenture",
+      companyname: "Navigem Data Inc.",
+      image: "navigem",
       position: "Software Engineer - iOS",
       des: [
         {client: "Client - ELCITA, Bangalore:",
